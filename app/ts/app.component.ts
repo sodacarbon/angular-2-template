@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {Config} from "./config.service";
 
 @Component({
     selector: 'my-app',
@@ -6,5 +7,5 @@ import {Component} from 'angular2/core';
 })
 
 export class AppComponent {
-    mainHeading = "My Videos"
+    mainHeading = Config.MAIN_HEADING;
 }
